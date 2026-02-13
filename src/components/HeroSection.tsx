@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroDashboard from "@/assets/hero-dashboard.png";
 
@@ -10,18 +10,20 @@ const HeroSection = () => {
           {/* Left side - text */}
           <div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] mb-6">
-              Discover content{" "}
-              <span className="text-primary">before anyone else.</span>
+              Hub for Media: <br />
+              <span className="text-primary">Search the Whole Internet.</span>
             </h1>
 
-            <p className="text-lg text-muted-foreground max-w-lg mb-10">
-              Scrape, analyze, and monitor web content at scale. Our stealth-powered engine discovers relevant articles, news, and mentions across the entire web.
+            <p className="text-lg text-muted-foreground max-w-lg mb-8">
+              Scrape news from all media channels—Online, Printed, and Social Media. Just type a keyword to discover relevant content from anywhere, anytime.
             </p>
 
-            <Link to="/request-demo" className="bg-foreground text-background px-8 py-4 rounded-full font-semibold text-base flex items-center gap-3 hover:opacity-90 transition-all w-fit">
-              Request Demo
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+
+            <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                <span className="bg-muted px-3 py-1 rounded-full">Online News</span>
+                <span className="bg-muted px-3 py-1 rounded-full">Printed Media</span>
+                <span className="bg-muted px-3 py-1 rounded-full">Social Media</span>
+            </div>
           </div>
 
           {/* Right side - image */}

@@ -1,10 +1,12 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer id="contact" className="border-t border-border py-12 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <span className="font-display font-bold text-foreground text-lg">Hub4<span className="text-primary">Media</span></span>
+            <img src={logo} alt="Hub4Media" className="h-12 mb-4 w-auto" />
             <p className="text-sm text-muted-foreground mt-3">
               AI-powered content discovery and web scraping platform built for speed and stealth.
             </p>

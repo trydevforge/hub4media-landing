@@ -7,10 +7,10 @@ const CTASection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-background">
-            Ready to discover content?
+            Ready to scrape the media?
           </h2>
           <p className="text-background/60 text-lg mb-10 max-w-xl mx-auto">
-            Start scraping the web for relevant content today. No credit card required. Free tier includes 1,000 scrapes per month.
+            Start searching specific keywords across all channels. Filter by language and location, then download your report.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/request-demo" className="group bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all">

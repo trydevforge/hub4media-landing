@@ -1,29 +1,29 @@
-import { Search, Cpu, Database, BarChart3 } from "lucide-react";
+import { Search, Filter, Globe, FileDown } from "lucide-react";
 
 const steps = [
   {
     icon: Search,
     step: "01",
     title: "Enter Your Keyword",
-    description: "Type any keyword or phrase. Multi-word queries are automatically wrapped in exact-match quotes.",
+    description: "Type any keyword or search item. Hub4Media processes your input to find relevant matches.",
   },
   {
-    icon: Cpu,
+    icon: Filter,
     step: "02",
-    title: "Stealth Agents Activate",
-    description: "Our parallel browser pool spins up headless agents with randomized fingerprints to scrape results.",
+    title: "Apply Smart Filters",
+    description: "Refine by Language (Marathi, Tamil, etc.), Time (Day-wise), or Location (City/State-wise).",
   },
   {
-    icon: Database,
+    icon: Globe,
     step: "03",
-    title: "Data is Deduplicated",
-    description: "Results are upserted by URL. Title, snippet, and publish dates are stored automatically.",
+    title: "Scrape All Channels",
+    description: "Our engine searches Online News, Printed Media, and Social Media simultaneously.",
   },
   {
-    icon: BarChart3,
+    icon: FileDown,
     step: "04",
-    title: "Analyze & Expand",
-    description: "View results in a clean dashboard. Hit 'Scrap More' to discover older content.",
+    title: "Download Data",
+    description: "Get your results in a proper Excel format, ready for immediate use and analysis.",
   },
 ];
 
@@ -34,7 +34,7 @@ const HowItWorksSection = () => {
         <div className="text-center mb-16">
           <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">How It Works</p>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-foreground">
-            Four steps to <span className="text-primary">content intelligence</span>
+            Four steps to <span className="text-primary">complete media coverage</span>
           </h2>
         </div>
 

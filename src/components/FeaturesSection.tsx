@@ -1,35 +1,35 @@
-import { Shield, Zap, Search, Database, Globe, BarChart3 } from "lucide-react";
+import { Shield, Search, Globe, Filter, Calendar, FileSpreadsheet } from "lucide-react";
 
 const features = [
   {
+    icon: Globe,
+    title: "Whole Internet Search",
+    description: "Search the entire internet for any keyword or item. We scrape every corner to find what you need.",
+  },
+  {
     icon: Search,
-    title: "Smart Discovery",
-    description: "Keyword-based content discovery with automatic exact phrase matching for multi-word queries.",
+    title: "Multi-Channel Scraping",
+    description: "Access news from Online sources, Printed media, and Social Media platforms all in one hub.",
+  },
+  {
+    icon: Filter,
+    title: "Advanced Filtering",
+    description: "Filter results by Language (Marathi, Gujarati, Tamil, etc.), City, State, and more.",
+  },
+  {
+    icon: Calendar,
+    title: "Time-Based Options",
+    description: "Filter news Day-wise or Time-wise to get the exact timeline of events you're looking for.",
+  },
+  {
+    icon: FileSpreadsheet,
+    title: "Excel Export",
+    description: "Download your scraped data in a proper Excel format for easy analysis and reporting.",
   },
   {
     icon: Shield,
     title: "Stealth Scraping",
-    description: "Browser pool mimics real users with rotating user-agents and short-lived sessions to avoid detection.",
-  },
-  {
-    icon: Zap,
-    title: "Parallel Processing",
-    description: "3–5 simultaneous headless agents scrape different result pages, maximizing speed and throughput.",
-  },
-  {
-    icon: Database,
-    title: "Auto-Deduplication",
-    description: "URL-based upsert ensures zero duplicates. Clean, consistent data every time you scrape.",
-  },
-  {
-    icon: Globe,
-    title: "Date Range Filtering",
-    description: "Discover content within specific time windows. Roll back through weeks of history with one click.",
-  },
-  {
-    icon: BarChart3,
-    title: "Rate Limit Protection",
-    description: "Token-bucket algorithm with randomized fingerprints keeps your scraping sustainable.",
+    description: "Browser pool mimics real users with rotating user-agents to avoid detection while you search.",
   },
 ];
 
@@ -40,10 +40,10 @@ const FeaturesSection = () => {
         <div className="text-center mb-16">
           <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-3">Features</p>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-foreground">
-            Everything you need to <span className="text-primary">scrape smarter</span>
+            All your media news <span className="text-primary">in one place</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Built for speed, stealth, and scale. Hub4Media handles the hard parts so you can focus on insights.
+            From local printed news to global social media trends, Hub4Media gathers it all.
           </p>
         </div>
 
