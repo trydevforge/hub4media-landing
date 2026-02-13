@@ -46,8 +46,9 @@ const HowItWorksSection = () => {
             {steps.map((step) => (
               <div key={step.step} className="relative text-left">
                 <div className="relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
-                    <step.icon className="h-7 w-7 text-primary" />
+                  <div className="w-16 h-16 rounded-2xl bg-background relative flex items-center justify-center mb-6">
+                    <div className="absolute inset-0 bg-primary/10 rounded-2xl" />
+                    <step.icon className="h-7 w-7 text-primary relative z-10" />
                   </div>
                   <div className="text-xs font-semibold text-primary mb-2 tracking-wider">STEP {step.step}</div>
                   <h3 className="text-lg font-display font-bold text-foreground mb-2">{step.title}</h3>
