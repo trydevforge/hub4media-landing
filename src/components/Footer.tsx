@@ -17,9 +17,6 @@ const Footer = () => {
             <a href="tel:9456963234" className="text-muted-foreground hover:text-primary transition-colors block mb-1">
               +91 94569 63234
             </a>
-            <a href="mailto:hello@hub4media.com" className="text-muted-foreground hover:text-primary transition-colors">
-              hello@hub4media.com
-            </a>
           </div>
         </div>
         
