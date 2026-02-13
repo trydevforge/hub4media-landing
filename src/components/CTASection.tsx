@@ -13,7 +13,7 @@ const CTASection = () => {
             Start searching specific keywords across all channels. Filter by language and location, then download your report.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href={import.meta.env.VITE_DEMO_URL} target="_blank" rel="noopener noreferrer" className="group bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all">
+            <a href="https://rpnj6tpp-3000.inc1.devtunnels.ms" target="_blank" rel="noopener noreferrer" className="group bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all">
               Get Started Free
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>

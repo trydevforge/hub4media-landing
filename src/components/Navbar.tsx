@@ -21,7 +21,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-4">
           <button onClick={() => (window as any).Intercom && (window as any).Intercom('show')} className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Sales</button>
-          <a href={import.meta.env.VITE_DEMO_URL} target="_blank" rel="noopener noreferrer" className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+          <a href="https://rpnj6tpp-3000.inc1.devtunnels.ms" target="_blank" rel="noopener noreferrer" className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
             Request Demo
           </a>
         </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
           <a href="/#how-it-works" className="block text-sm text-muted-foreground hover:text-foreground" onClick={() => setIsOpen(false)}>How It Works</a>
           <button className="block text-sm text-muted-foreground hover:text-foreground text-left w-full" onClick={() => { (window as any).Intercom && (window as any).Intercom('show'); setIsOpen(false); }}>Contact</button>
           <button className="block text-sm text-muted-foreground hover:text-foreground text-left w-full" onClick={() => { (window as any).Intercom && (window as any).Intercom('show'); setIsOpen(false); }}>Contact Sales</button>
-          <a href={import.meta.env.VITE_DEMO_URL} target="_blank" rel="noopener noreferrer" className="block w-full bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold text-center" onClick={() => setIsOpen(false)}>
+          <a href="https://rpnj6tpp-3000.inc1.devtunnels.ms" target="_blank" rel="noopener noreferrer" className="block w-full bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold text-center" onClick={() => setIsOpen(false)}>
             Request Demo
           </a>
         </div>
