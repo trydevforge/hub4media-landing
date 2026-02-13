@@ -16,14 +16,14 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           <a href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
           <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
-          <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+          <button onClick={() => (window as any).Intercom && (window as any).Intercom('show')} className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</button>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link to="/contact-sales" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Sales</Link>
-          <Link to="/request-demo" className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+          <button onClick={() => (window as any).Intercom && (window as any).Intercom('show')} className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact Sales</button>
+          <a href={import.meta.env.VITE_DEMO_URL} target="_blank" rel="noopener noreferrer" className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
             Request Demo
-          </Link>
+          </a>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setIsOpen(!isOpen)}>
@@ -35,11 +35,11 @@ const Navbar = () => {
         <div className="md:hidden bg-background border-t border-border px-6 py-4 space-y-4">
           <a href="/#features" className="block text-sm text-muted-foreground hover:text-foreground" onClick={() => setIsOpen(false)}>Features</a>
           <a href="/#how-it-works" className="block text-sm text-muted-foreground hover:text-foreground" onClick={() => setIsOpen(false)}>How It Works</a>
-          <Link to="/contact" className="block text-sm text-muted-foreground hover:text-foreground" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link to="/contact-sales" className="block text-sm text-muted-foreground hover:text-foreground" onClick={() => setIsOpen(false)}>Contact Sales</Link>
-          <Link to="/request-demo" className="block w-full bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold text-center" onClick={() => setIsOpen(false)}>
+          <button className="block text-sm text-muted-foreground hover:text-foreground text-left w-full" onClick={() => { (window as any).Intercom && (window as any).Intercom('show'); setIsOpen(false); }}>Contact</button>
+          <button className="block text-sm text-muted-foreground hover:text-foreground text-left w-full" onClick={() => { (window as any).Intercom && (window as any).Intercom('show'); setIsOpen(false); }}>Contact Sales</button>
+          <a href={import.meta.env.VITE_DEMO_URL} target="_blank" rel="noopener noreferrer" className="block w-full bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold text-center" onClick={() => setIsOpen(false)}>
             Request Demo
-          </Link>
+          </a>
         </div>
       )}
     </nav>

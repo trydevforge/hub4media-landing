@@ -13,13 +13,13 @@ const CTASection = () => {
             Start searching specific keywords across all channels. Filter by language and location, then download your report.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/request-demo" className="group bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all">
+            <a href={import.meta.env.VITE_DEMO_URL} target="_blank" rel="noopener noreferrer" className="group bg-primary text-primary-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:opacity-90 transition-all">
               Get Started Free
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link to="/contact-sales" className="px-8 py-4 rounded-full font-semibold border border-background/20 text-background hover:bg-background/10 transition-colors">
+            </a>
+            <button onClick={() => (window as any).Intercom && (window as any).Intercom('show')} className="px-8 py-4 rounded-full font-semibold border border-background/20 text-background hover:bg-background/10 transition-colors">
               Contact Sales
-            </Link>
+            </button>
           </div>
         </div>
       </div>
