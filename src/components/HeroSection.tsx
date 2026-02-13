@@ -18,7 +18,7 @@ const HeroSection = () => {
               Scrape, analyze, and monitor web content at scale. Our stealth-powered engine discovers relevant articles, news, and mentions across the entire web.
             </p>
 
-            <Link to="/request-demo" className="bg-foreground text-background px-8 py-4 rounded-full font-semibold text-base flex items-center gap-3 hover:opacity-90 transition-all">
+            <Link to="/request-demo" className="bg-foreground text-background px-8 py-4 rounded-full font-semibold text-base flex items-center gap-3 hover:opacity-90 transition-all w-fit">
               Request Demo
               <ArrowRight className="h-4 w-4" />
             </Link>
